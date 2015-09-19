@@ -1,0 +1,196 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width : 767px) {
+	.get-more-info img{padding:0 0 10px 0px;}
+	.sidebar {margin-left: -5px;}
+	.tabs-widget ul.nav li a {padding: 8px}
+	.article-title{margin: 10px 0px 20px 0px;}
+	.blog-item {padding: 20px 0px 40px 0px;}
+	.page-number > p {margin-top: 20px;}
+	.sidebar.box-wrapper {margin-left: -5px;}
+	.page-content.box-wrapper { 
+		margin-left: -5px;
+		margin-top: 20px;
+	}
+	.less-pad-left {padding-left: 20px;}
+	.add-pad-right{padding-right: 10px;}	
+	.showcase .showcase-right ul.top-service-box li {
+		width: auto;
+		height: 220px;
+		margin: 5px;
+		float: none;
+		display: block;
+	}
+	.single-latest {margin-bottom: 20px; overflow: hidden;}
+	.footer-widget {overflow:visible; padding-bottom:12px}
+	.sidebar.box-wrapper.blog-page {margin-top: 0;}
+	.footer-widget div.row {width: 100%;}
+
+	a#scrollUp {display: none !important;}
+
+	.xs-mrgleft-15 {margin-left: 15px;}
+	.xs-mrgright-15 {margin-right: 15px;}
+	
+	.pagination>li>a, .pagination>li>span {
+	padding: 6px 10px;
+	}
+
+	/* SEARCH BAR */
+	.navbar-header {
+		width: 100%;
+	}
+
+	.text-input {
+	  float: right;
+	}
+	
+	.mag-cat-img {margin-bottom:10px;}
+	.post-thumb{width:100%;}
+
+} 
+
+
+/* Landscape Mobile */
+@media only screen and (min-width: 480px) and (max-width: 767px) {	
+	.tabs-widget ul.nav li a {padding: 8px}
+	.get-more-info img{padding:0 0 10px 0px;}
+	.article-title{margin:10px 0px 20px 0px;}
+	.blog-item {padding: 20px 0px 40px 0px;}
+	.page-number > p {margin-top: 50px;}
+	.showcase .showcase-right ul.top-service-box li {
+		width: auto;
+		height: 220px;
+		margin: 5px;
+		float: none;
+		display: block;
+	}
+	.page-content.box-wrapper.about-page { margin-left: 0px;}
+	.page-content.box-wrapper.about-left-page { margin-left: -5px;}
+	.sidebar.box-wrapper {margin-left: -5px;}
+	.add-pad-right{padding-right: 10px;}
+	.xs-mrgleft-15 {margin-left: 15px;}
+	.xs-mrgright-15 {margin-right: 15px;}
+
+	/*	BREAKING NEWS CAROUSEL	*/
+	#news-carousel {
+		width 		: 100%;
+		margin-top	: 5px;
+	}
+
+	#news-carousel ul.carousel-inner {
+		width		: 90%;
+	}
+	.featured-article-item {margin-bottom:20px;}
+
+	.post-thumb{width:100%;}
+	
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width : 768px) and (max-width : 991px) {
+
+	.navbar-header {
+		width: 22%;
+	}
+
+	.head-search .form-control:active, 
+	.head-search .form-control:focus {
+		width: 162px;
+	}
+	.tabs-widget ul.nav li a {
+		padding: 8px;
+	}
+
+	.get-more-info img{padding:0 0 10px 10px;}
+	.article-title{margin: 10px 0px 20px 0px;}
+	.blog-item {padding: 20px 5px 40px 5px;}
+	.page-number > p {margin-top: 50px;}
+	.showcase .showcase-right ul.top-service-box li {
+		width: auto;
+		height: 220px;
+		margin: 5px;
+		float: none;
+		display: block;
+	}
+	.sm-mrgleft-15 {margin-left: 15px;}
+	.sm-mrgright-15 {margin-right: 15px;}
+	.add-pad-right{padding-right:15px;}
+
+	/*	MEGA MENU	*/
+	.mega-dropdown .container {
+    	width: 720px;
+ 	}
+
+
+	/*	BREAKING NEWS CAROUSEL	*/
+	#news-carousel {
+		width : 85%;
+	}
+
+	#news-carousel ul.carousel-inner {
+		width		: 91%;
+	}
+
+	.mag-cat-img {margin-bottom:10px;}
+	
+	a#scrollUp {display: none !important;}
+	.post-thumb{width:100%;}
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width : 992px) and (max-width : 1199px) {
+	
+	.tabs-widget ul.nav li a {padding: 8px 10px}
+	.article-title{margin: 0 0 20px;}
+	.blog-item {padding: 20px 5px 40px 5px;}
+	.page-number > p {margin-top: 50px;}
+	.showcase .showcase-right ul.top-service-box li {
+		width: 180px;
+		height: 182px;
+	}
+	div.owl-item {
+		width: 255px !important;
+	}
+
+	/*	MEGA MENU	*/
+	.mega-dropdown .container {
+    	width: 940px;
+ 	}
+
+
+	/*	BREAKING NEWS CAROUSEL	*/
+	#news-carousel {
+		width : 89%;
+	}
+
+	#news-carousel ul.carousel-inner {
+		width		: 93%;
+	}
+
+
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width : 1200px) {
+	.tabs-widget ul.nav li a {padding: 8px 15px}
+	.article-title{margin: 0 0 20px;}
+	.blog-item {padding: 20px 5px 40px 5px;}
+	.page-number > p {margin-top: 50px;}
+	.showcase .showcase-right ul.top-service-box li {}
+
+	/*	MEGA MENU	*/
+	.mega-dropdown .container {
+    	width: 1140px;
+ 	}
+
+
+	/*	BREAKING NEWS CAROUSEL	*/
+	#news-carousel {
+		width : 91%;
+	}
+
+
+
+}

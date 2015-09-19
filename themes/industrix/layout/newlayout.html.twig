@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+		<meta charset="utf-8" />
+		<title>Industrix</title>
+		<meta name="description" content="" />
+
+		<!-- This styles only adds some repairs on idevices  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<!-- Favicon --> 
+		<link rel="shortcut icon" href="img/favicon.png" />
+
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="{{config.url}}/themes/{{config.theme}}/css/font-awesome.min.css" />
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" href="{{config.url}}/themes/{{config.theme}}/css/normalize.css" />
+
+		<!-- Owl Carousel CSS -->
+		<link href="{{config.url}}/themes/{{config.theme}}/css/owl.carousel.css" rel="stylesheet" media="screen">
+		
+		<!-- REVOLUTION BANNER CSS SETTINGS -->
+		<link rel="stylesheet" type="text/css" href="{{config.url}}/themes/{{config.theme}}/rs-plugin/css/settings.css" media="screen" />			
+
+		<!-- Bootstrap CSS -->		
+		<link rel="stylesheet" href="{{config.url}}/themes/{{config.theme}}/css/bootstrap.min.css" />
+		
+		<link rel="stylesheet" href="{{config.url}}/themes/{{config.theme}}/css/offcanvas.css" />		
+
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="{{config.url}}/themes/{{config.theme}}/style.css" />
+
+		<!-- Responsive Framework -->
+		<link href="{{config.url}}/themes/{{config.theme}}/css/responsive.css" rel="stylesheet" media="screen" />
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+    </head>
+	
+    <body>
+	
+		<div class="wrapper">
+			<div class="row row-offcanvas row-offcanvas-left">
+				<!--[if lt IE 7]>
+					<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+				<![endif]-->
+				
+				<div class="inner-wrapper">
+					<div class="header-top">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-3 col-sm-4 col-xs-12">
+									<div class="logo">
+										<a title="8Свет" href="/{{city}}">
+											<img alt="8Свет" src="/content/media/882.png" class="logo-img">
+										</a>
+									</div> <!-- //logo -->
+								</div> <!-- //col-md-3 -->
+
+								<div class="col-md-9 col-sm-8 hidden-xs">
+									<!-- HEAD LOGIN -->
+									<div class="login pull-right">
+										<div id="css-modal-area">
+											<!-- Panel top -->	
+											<div class="css-panel">
+												<!-- Login button -->
+												<div class="modal-button-icon">
+												<a data-toggle="modal" href="#cssModal"><i class="fa fa-lock"></i></a>
+
+												<!-- Registration button -->
+												<a data-toggle="modal" href="#cssRegi"><i class="fa fa-user"></i></a>
+												</div>						
+
+											</div> <!-- //css-panel -->
+										</div> <!-- //css-modal-area -->
+									</div>
+									<!-- //HEAD LOGIN -->
+									
+									<!-- HEAD SOCIAL ICON -->
+									<div class="pull-right ">     
+										
+										<div class="social-icon">
+											<ul>
+												<li><a href="#" title="RSS" target="_blank"><i class="fa fa-rss"></i></a></li>
+										
+												<li><a href="http://www.facebook.com/#" title="Facebook" target="_blank"><i class="fa fa-facebook"> </i></a></li>
+											
+												<li><a href="http://www.twitter.com/#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+										
+												<li><a href="https://plus.google.com/#" title="Google plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+										
+												<li><a href="http://www.youtube.com/#" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+										
+												<li><a href="http://www.linkedin.com/#" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+										
+												<li><a href="http://www.flickr.com/#" title="Flickr" target="_blank"><i class="fa fa-flickr"></i></a></li>
+										
+												<li><a href="skype:#?call" title="Skype" target="_blank"><i class="fa fa-skype"></i></a></li>
+										
+												<li><a href="http://www.vimeo.com/#" title="Vimeo" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
+										
+											</ul>
+										</div> <!-- //social-icon -->
+									</div>
+									<!-- //HEAD SOCIAL ICON -->
+									
+								</div> <!-- //col-md-9 -->
+							</div> <!-- //row -->
+						</div> <!-- //container -->
+					</div> <!-- //header-top -->	
+				
+				
+				
+				
+					<!-- Navigation Area -->
+					<div class="container">
+						<div class="navbar navbar-default mainnav">
+
+							<!-- NAVBAR HEADER -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="#myNavmenuCanvas" data-placement="left">
+								<i class="fa fa-bars"></i>
+								</button>
+								
+								<!-- HEAD SEARCH -->
+								<div class="head-search">     
+								    <form method="post" action="search" class="form-search">
+										<div class="search">
+											<i class="fa fa-search"></i><input type="text" size="20" class="form-control " maxlength="20" name="searchword">
+										</div>
+									</form>
+								</div>
+								<!-- //HEAD SEARCH -->
+							</div>
+							<!-- //NAVBAR HEADER -->
+
+							<!-- NAVBAR MAIN -->
+							<nav class="navbar-collapse collapse">
+							
+								<ul class="nav navbar-nav">
+									<li class="active dropdown"><a href="index.html" >Home <b class="caret"></b></a>
+										<!-- submenu-wrapper -->
+										<div class="submenu-wrapper submenu-wrapper-topbottom">
+											<!-- submenu-inner -->
+											<div class="submenu-inner  submenu-inner-topbottom">
+												<ul class="dropdown-menu">
+													<li class="active"><a href="index.html">Home Style 1</a></li>
+													<li><a href="index_2.html">Home Style 2</a></li>
+													<li><a href="index_3.html">Home Style 3</a></li>
+													<li><a href="index_4.html">Home Style 4 </a></li>
+												</ul>
+											</div> <!-- /submenu-inner -->
+										</div> <!-- /submenu-wrapper -->
+									</li>
+									
+									<li><a href="magazine_layout.html">Magazine Layout</a></li>
+									<li class="dropdown">
+										<a href="#">Pages<b class="caret"></b></a>
+										<!-- submenu-wrapper -->
+										<div class="submenu-wrapper submenu-wrapper-topbottom">
+											<!-- submenu-inner -->
+											<div class="submenu-inner  submenu-inner-topbottom">
+												<ul class="dropdown-menu">
+													<li><a href="about.html">About Us</a></li>
+													<li><a href="left_sidebar.html">Left Sidebar</a></li>
+													<li><a href="full_width.html">Full Width Page</a></li>
+													<li><a href="service.html">Services</a></li>
+													<li><a href="pricing.html">Pricing Table</a></li>
+													<li><a href="project.html">Project</a></li>
+													<li class="dropdown">
+														<a href="team.html">
+															Team Page <span class="fa fa-caret-right"></span>
+														</a>
+																											
+														<div class="submenu-sub-wrapper submenu-sub-wrapper-leftright">
+															<div class="submenu-sub-inner submenu-sub-inner-leftright">
+																<ul class="sub-dropdown-menu">
+																	<li><a title="Submenu" href="team.html">Team Page</a></li>
+																	<li><a title="Submenu" href="single-team.html">Single Team Page</a></li>
+																</ul>
+															</div>
+														</div>
+
+													</li>
+
+													<li class="dropdown">
+														<a href="faq.html">
+															FAQ <span class="fa fa-caret-right"></span>
+														</a>
+																											
+														<div class="submenu-sub-wrapper submenu-sub-wrapper-leftright">
+															<div class="submenu-sub-inner submenu-sub-inner-leftright">
+																<ul class="sub-dropdown-menu">
+																	<li><a title="Submenu" href="faq.html">FAQ Page</a></li>
+																	<li><a title="Submenu" href="faq-style2.html">FAQ Style 2</a></li>
+																</ul>
+															</div>
+														</div>
+
+													</li>
+
+													<li><a href="404.html">404 Page</a></li>
+													<li><a href="contact.html">Contact</a></li>
+												</ul>
+											</div> <!-- /submenu-inner -->
+										</div> <!-- /submenu-wrapper -->												
+									</li>
+									
+									<li class="dropdown">
+										<a href="#">Blog<b class="caret"></b></a>
+										<!-- submenu-wrapper -->
+										<div class="submenu-wrapper submenu-wrapper-topbottom">
+											<!-- submenu-inner -->
+											<div class="submenu-inner  submenu-inner-topbottom">							
+												<ul class="dropdown-menu">
+													<li><a href="blog.html">Blog</a></li>
+													<li><a href="single.html">Blog Single</a></li>
+													<li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+													<li><a href="blog-full-width.html">Blog Fullwidth</a></li>
+												</ul>
+										
+											</div> <!-- /submenu-inner -->
+										</div> <!-- /submenu-wrapper -->										
+									</li>
+
+									<li class="dropdown">
+										<a href="#">Shortcode<b class="caret"></b></a>
+										<!-- submenu-wrapper -->
+										<div class="submenu-wrapper submenu-wrapper-topbottom">
+											<!-- submenu-inner -->
+											<div class="submenu-inner  submenu-inner-topbottom">							
+												<ul class="dropdown-menu">
+													<li><a href="shortcodes-elements.html">Elements</a></li>
+													<li><a href="shortcodes-columns.html">Columns</a></li>
+													<li><a href="shortcodes-typography.html">Typography</a></li>
+												</ul>
+											</div> <!-- /submenu-inner -->
+										</div> <!-- /submenu-wrapper -->										
+									</li>
+									
+									{#
+									<li class="dropdown mega-fw has-megamenu"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contact<b class="caret"></b></a>
+										
+										<div class="submenu-wrapper submenu-wrapper-topbottom megamenu-wrapper">
+											<div class="submenu-inner  submenu-inner-topbottom megamenu-inner">										
+												<ul class="dropdown-menu">
+														<li>
+															<div class="mega-content">
+																<div class="row">
+																	<!-- mega menu item -->
+																	<div class="col-sm-3">
+																		<div class="mega-menu-item">
+																			<h2>Our location</h2>
+																			<p>350 Fifth Avenue 34th floor <br>
+																			New York NY 10065 USA</p>
+																			<img class="img-responsive" src="img/menu-map.jpg" alt="Demo Image"/>
+																		</div>
+																	</div>
+
+																	<!-- mega menu item -->
+																	<div class="col-sm-3">												
+																		<div class="mega-menu-item">
+																			<h2>Head Office</h2>
+																			<div class="mega-item-text">
+																				<p><strong>Email</strong><br>Please feel free to send us an email <br>
+																				<a class="email" href="#">info@industrix.com</a></p>
+																				<p><strong>Phone</strong><br> Give us a call<br> +1-212-736-1234</p>
+																				<p><strong>Mobile</strong><br> Buy Online or call <br> +1-212-736-1234</p>
+																			</div>
+																		</div>
+																	</div>
+
+																	<!-- mega menu item -->
+																	<div class="col-sm-3">
+																		<div class="mega-menu-item">
+																			<h2>Facetory Address</h2>
+																			<div class="mega-item-text">
+																				<p><strong>Steel Mile</strong><br>261-3502 Natoque Street<br>Glen CoveQC<br>Liberia</p>
+																				<p><b>Petroleum</b><br>4027 Rutrum <br>Ave Gulfport<br>NBSlovakia</p>
+																				<p><strong>Bio </strong><b>Diesel</b><br>446-8604 Risus Avenue Quincy<br>Nova Scotia<br>Colombia</p>
+																			</div>
+																		</div>
+																	</div>
+
+																	<!-- mega menu item -->
+																	<div class="col-sm-3">
+																		<div class="mega-menu-item">
+																			<h2>this is sample text</h2>
+																			<div class="mega-item-text">
+																				<p>Our support Hotline is available 8 Hours a day</p>
+																				<p><strong>Monday-Friday: </strong> 10am to 8pm <br> <strong>Saturday – Sunday:</strong> By Special Appointment <br> <strong>Weekend:</strong> Closed</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</li>
+												</ul>
+										
+											</div>
+										</div> <!-- /megamenu-wrapper -->										
+										
+										<!-- //Mega Menu -->
+									</li>
+									#}
+								</ul>
+							</nav> <!-- //navbar-collapse -->
+						</div> <!-- //navbar -->
+					</div> <!-- //container -->
+				
+				
+				
+
+					<!-- Slider Area -->
+					<div class="container">
+						<div class="box-shadow-area showcase mt-20">
+							<div class="row">
+								<div class="col-md-7 col-sm-12 col-xs-12">
+									<div class="showcase-left">
+										<div class="tp-banner-container">
+											<div class="tp-banner" >
+												<ul>
+													<!-- SLIDE  -->
+													<li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+														<!-- MAIN IMAGE -->
+														<img src="/content/media/slide_1.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+														<!-- LAYERS -->
+														<!-- LAYER NR. 1 -->
+														<div class="tp-caption slider-caption skewfromrightshort fadeout"
+															data-x="10"
+															data-y="170"
+															data-speed="500"
+															data-start="1200"
+															data-easing="Power4.easeOut">We Are Professional, <br /> Competitive And <br />Competent In Our<br /> Service
+														</div>
+
+													</li>
+													<!-- SLIDE  -->
+													<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+														<!-- MAIN IMAGE -->
+														<img src="/content/media/slide_1.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+														<!-- LAYERS -->
+														<!-- LAYER NR. 1 -->
+														<div class="tp-caption slider-caption2 skewfromrightshort fadeout"
+															data-x="50"
+															data-y="180"
+															data-speed="500"
+															data-start="1200"
+															data-easing="Power4.easeOut">We Have a Team Of Leaders And <br /> Professionalsn That Know Their <br /> Job And Do It Well
+														</div>
+
+													</li>
+
+												</ul>
+											</div>
+										</div>
+										
+									</div> <!-- //showcase-left -->
+								</div> <!-- //col-md-7 -->
+								
+								<div class="col-md-5 col-sm-12 col-xs-12">
+									<div class="showcase-right">
+										<ul class="top-service-box">
+											<li>
+												<h2>Oil &amp; Gas</h2>
+												<p>Li Europan lingues es membres del sam familie.</p>
+												<a href="#">DETAILS</a>
+											</li>
+											
+											<li>
+												<h2>Utilities</h2>
+												<p>Lor separat existentie es un myth.</p>
+												<a href="#">DETAILS</a>
+											</li>
+											
+											<li>
+												<h2>Automotive</h2>
+												<p>Litot Europa usa li sam vocabular.</p>
+												<a href="#">DETAILS</a>
+											</li>
+											
+											<li>
+												<h2>Chemicals</h2>
+												<p>Por scientie musica sport ete</p>
+												<a href="#">DETAILS</a>
+											</li>
+										</ul>
+
+									</div> <!-- //showcase-right -->
+								</div><!-- //col-md-5 -->
+								
+							</div> <!-- //row -->
+						</div> <!-- //box-shadow-area -->
+					</div> <!-- //container -->
+
+
+					<div class="container">		
+						<div class="copyright-text box-wrapper">
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<div class="left-copy-text">
+										<p>Copyright © 2014, 8cvet.com, St. Peterburg, Russia
+										<br />Assembled on <a href="#" title="" >slim framework</a></p>
+									</div> <!-- //left-copy-text -->
+								</div> <!-- //col-md-6 -->
+
+								<div class="col-md-6 col-sm-6 hidden-xs">
+									<div class="footer-right">
+										<div class="social-icon pull-right social-fix">
+											<ul>
+												{#}
+												<li><a href="#" title="RSS" target="_blank"><i class="fa fa-rss"></i></a></li>
+										#}
+												<li><a href="#" title="ВКонтакте" target="_blank"><i class="fa fa-vk"> </i></a></li>
+				{#}
+												<li><a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"> </i></a></li>
+											
+												<li><a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+										
+												<li><a href="#" title="Google plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+										
+												<li><a href="#" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+										
+												<li><a href="#" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+										
+												<li><a href="#" title="Flickr" target="_blank"><i class="fa fa-flickr"></i></a></li>
+										
+												<li><a href="skype:#?call" title="Skype" target="_blank"><i class="fa fa-skype"></i></a></li>
+										
+												<li><a href="" title="Vimeo" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
+												#}
+											</ul>
+										</div> <!-- //social-icon -->
+									</div> <!-- //footer-right -->
+								</div> <!-- //col-md-6 -->
+								
+							</div> <!-- //row -->
+						</div> <!-- //copyright-text -->
+					</div> <!-- //container -->
+
+
+
+				</div> <!-- //inner-wrapper -->
+				
+				<div class="offcanvas-wrapper col-sm-3 col-xs-3 hidden-lg hidden-md hidden-sm sidebar-offcanvas">
+					<div class="sidebar-nav">
+						<h2>Sidebar</h2>
+						<button type="button" class="close" aria-hidden="true"  data-toggle="offcanvas" >&times;</button>
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="#">Pages</a>
+								<ul>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="pricing.html">Pricing Table</a></li>
+									<li><a href="left_sidebar.html">Left Sidebar</a></li>
+									<li><a href="full_width.html">Full Width Page</a></li>
+									<li><a href="service.html">Services</a></li>
+									<li><a href="project.html">Project</a></li>
+								</ul>
+							</li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="faq.html">Faq</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div> <!-- //sidebar-nav -->
+				</div> <!-- //offcanvas-wrapper -->
+				
+			</div> <!-- //row-offcanvas -->
+		</div> <!-- //wrapper -->
+
+        <!--Start script-->
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/modernizr-2.6.2.min.js"></script>
+        <!-- jQuery REVOLUTION Slider  -->
+        <script type="text/javascript" src="{{config.url}}/themes/{{config.theme}}/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+        <script type="text/javascript" src="{{config.url}}/themes/{{config.theme}}/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/bootstrap.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/owl.carousel.min.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.scrollUp.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/offcanvas.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/jquery.prettyPhoto.js"></script>
+        <script src="{{config.url}}/themes/{{config.theme}}/js/script.js"></script>
+        <!--End script    -->
+
+    </body>
+</html>

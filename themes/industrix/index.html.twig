@@ -1,0 +1,105 @@
+{% extends "layout/i3layout.html.twig" %}
+
+{% block content %}
+    {#{page.Content}#}
+{# slider #}
+	<!-- Slider Area -->
+	<div class="container">
+		<div class="box-shadow-area showcase mt-20">
+			<div class="row">
+				<div class="col-md-7 col-sm-12 col-xs-12">
+					<div class="showcase-left">
+						<div class="tp-banner-container">
+							<div class="tp-banner" >
+								<ul>
+
+									<!-- SLIDE  -->
+									<li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+										<!-- MAIN IMAGE -->
+										<img src="/content/media/slide_1.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+										<!-- LAYERS -->
+										<!-- LAYER NR. 1 -->
+										<div class="tp-caption slider-caption skewfromrightshort fadeout"
+											data-x="10"
+											data-y="170"
+											data-speed="500"
+											data-start="1200"
+											data-easing="Power4.easeOut">Команда опытных профессионалов
+										</div>
+									</li>
+
+									<!-- SLIDE  -->
+									<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+										<!-- MAIN IMAGE -->
+										<img src="/content/media/slide_2.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+										<!-- LAYERS -->
+										<!-- LAYER NR. 1 -->
+										<div class="tp-caption slider-caption skewfromrightshort fadein"
+											data-x="20"
+											data-y="300"
+											data-speed="500"
+											data-start="1200"
+											data-easing="Power4.easeOut">
+											<span style="color:#111111;">Выполним работу быстро <br/>и качественно!</span>
+										</div>
+									</li>
+
+									<!-- SLIDE  -->
+									<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+										<!-- MAIN IMAGE -->
+										<img src="/content/media/slide_3.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+										<!-- LAYERS -->
+										<!-- LAYER NR. 1 -->
+										<div class="tp-caption slider-caption2 skewfromrightshort fadeout"
+											data-x="30"
+											data-y="270"
+											data-speed="500"
+											data-start="1200"
+											data-easing="Power4.easeOut">Мы даем гарантии качества!
+										</div>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						
+					</div> <!-- //showcase-left -->
+				</div> <!-- //col-md-7 -->
+				
+				<div class="col-md-5 col-sm-12 col-xs-12">
+					<div class="showcase-right">
+						<ul class="top-service-box">
+							<li>
+								<h2>Услуга "Муж на час"</h2>
+								<p>Мелкие работы по дому.</p>
+								<a href="/spb/master/home">Подробности</a>
+							</li>
+							
+							<li>
+								<h2>Сантехника</h2>
+								<p>Краны, слив, сместители и многое другое.</p>
+								<a href="/spb/master/water">Подробности</a>
+							</li>
+							
+							<li>
+								<h2>Услуги электрика</h2>
+								<p>Вызов электрика.</p>
+								<a href="/spb/master/electro">Подробности</a>
+							</li>
+							
+							<li>
+								<h2>Услуги плотника</h2>
+								<p>Сборка мебели</p>
+								<a href="/spb/master/furniture	">Подробности</a>
+							</li>
+						</ul>
+
+					</div> <!-- //showcase-right -->
+				</div><!-- //col-md-5 -->
+				
+			</div> <!-- //row -->
+		</div> <!-- //box-shadow-area -->
+	</div> <!-- //container -->
+{# slider #}
+
+{% endblock %}

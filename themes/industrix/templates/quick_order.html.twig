@@ -1,0 +1,155 @@
+{% extends "layout/i3layout.html.twig" %}
+
+{% block content %}
+					
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box-wrapper">
+					<!-- PAGE TITLE -->
+					<div class="page-title">
+						<h1>Вызов мастера</h1>
+					</div>
+					<!-- BREADCRUMBS -->
+					<ul class="breadcrumb">
+						<li><a href="/">Главная</a><span class="divider"></span></li>
+						<li class="active">Вызов мастера </li>
+					</ul>
+				</div> <!-- //custom-page-header -->
+			</div>
+		</div>
+	</div>					
+	
+	
+		
+
+	<!-- pricing -->
+	<section id="pricing" class="clearfix mt-20"> 
+		<div class="container"> 
+			<div class="box-wrapper">
+				<div class="row">
+
+					<p>
+						Здесь Вы можете оставить заявку-online на вызов мастера на час, сантехника, электрика либо заказать сборку мебели.
+При заполнении формы заявки, не забывайте указывать свои контактные данные для связи с нашими диспетчерами.
+Вы также можете сделать заказ позвонив нам по телефону в г. Санкт-Петербурге: 8 (812) 98-52-178 или +7 962 685-21-78.
+					</p>
+					
+					<form action="/spb/quick/order" method="POST">
+						<div>
+							<table width="75%" align="center">
+							<tr>
+							<td colspan="2">
+
+							</td>
+							</tr>
+							<tr>
+							<td colspan="2">
+							<h3>Сделать ЗАКАЗ за 48 часов: <span style="color:red;">СКИДКА 10%</span></h3>                
+							</td>
+							</tr>
+							<tr>
+							<td>Имя</td>
+							<td>
+<input style="width:100%;" type="text" name="customer_name" required placeholder="Ваше имя" value="{#<?php echo $_POST['customer_name'] ?>#}" ><br/>
+							</td>
+							</tr>
+							<tr>
+							<td>Адрес</td>
+							<td>
+<input style="width:100%;" type="text" name="customer_address" required placeholder="Адрес" value="{#<?php echo $_POST['customer_address'] ?>#}" >
+							</td>
+							</tr>
+							<tr>
+							<td>Телефон</td>
+							<td>
+<input style="width:100%;" type="text" name="customer_phone" required placeholder="Номер вашего телефона" value="{#<?php echo $_POST['customer_phone'] ?>#}" >
+							</td>
+							</tr>
+							<tr>
+							<td>Описание работ</td>
+							<td>
+<textarea style="width:100%;"  name="customer_job" id="customer_job" cols="40" rows="7">
+{#<?php echo trim($_POST['customer_job']); ?>#}
+</textarea>
+							</td>
+							</tr>
+
+<tr>
+	<td colspan="2" align="center" valign="center">
+		<div class="g-recaptcha" data-sitekey="6LciSPgSAAAAAHbaXV3bUBPZ3v7vVwxU1HMt0sFI"></div>
+	</td>
+</tr>
+
+							<tr>
+							<td colspan="2">
+							<input type="submit" value="Сделать заказ" style="width:240px; height:40px; " />
+							</td>
+							</tr>
+							</table>
+						</div>
+					</form>
+<p>
+	После выполнения работ обязательно сохраняйте квитанцию об оплате. При предъявлении 3-х квитанций при последующем вызове мастера, Вы также получите скидку 10% на любые виды работ.
+</p>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock content %}
+
+
+
+
+{#	
+							<?php
+							# was there a reCAPTCHA response?
+							if ($_POST["recaptcha_response_field"]) {
+							$resp = recaptcha_check_answer ($privatekey,
+							$_SERVER["REMOTE_ADDR"],
+							$_POST["recaptcha_challenge_field"],
+							$_POST["recaptcha_response_field"]);
+
+							if ($resp->is_valid) {
+							//echo "You got it!";
+							/*
+							Отправляем SMS через оператора
+							*/
+							echo "<span style='color:green;'>Спасибо, Ваш заказ принят. Наши сотрудники связутся с Вами в ближайшее время</span>";
+							/*
+							sleep( 5 );
+							header( "Location: index.php" );
+							*/
+							//  t89811716286 Пароль: 182834
+							// http://api_login:api_password@gate.prostor-sms.ru/send/?phone=%2B71234567890&text=test 
+							// REST 
+							// http://api.prostor-sms.ru/messages/v2/send/?phone=%2B71234567890&text=test                       
+							// Ответ: A132571BC=accepted 
+							// если ответ иной - сообщить в окне про необходимость дозвона ручками
+							// @todo хранить заказы в БД
+							echo "<p>";
+							$orderNumber = mt_rand( 1000, 9999 );
+							echo "Номер заказа: $orderNumber <br/>"  ;
+							echo "Заказчик: " . $_POST['customer_name'] . "<br/>";
+							echo "Телефон для связи: " . $_POST['customer_phone'] . "<br/>";
+							echo "Адрес заказа: " . $_POST['customer_address'] . "<br/>";
+							echo "Работы: " . trim($_POST['customer_job']) . "<br/>";
+							echo "</p>";
+
+							$smsText = "Заказ. Тел:" . $_POST['customer_phone'] . " Имя:" . $_POST['customer_name'] . " Aдрес:" . $_POST['customer_address']  . " Работа:" . substr( trim($_POST['customer_job']), 0, 128) ;
+
+							//echo "<span style='color:green;'>$smsText</span><br/>";
+							//$result = sendSms( $smsText, "9811714272" );
+							$result = sendSms( $smsText, "9626852178" );
+							echo "<p>$result</p>";
+
+
+							die();    
+							} else {
+							# set the error code so that we can display it
+							echo "<span style='color:red;'>Не верно набранные символы!</span>";
+							$error = $resp->error;
+							}
+							}
+							?>
+#}

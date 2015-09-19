@@ -1,0 +1,11 @@
+/nbproject/
+/.idea/
+/vendor/
+88_access_log
+88_error_log
+composer.lock
+log/
+/log
+
+
+
